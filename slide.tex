@@ -136,6 +136,15 @@
 
 \section{Tổng quan về dữ liệu cuộc bầu cử}
 
+\begin{frame}{Dữ liệu sử dụng}
+    \begin{itemize}
+        \item Dữ liệu bầu cử tại từng hạt: \url{https://www.kaggle.com/datasets/unanimad/us-election-2020}
+        \item Dữ liệu nhân khẩu học tại từng hạt (năm 2017): \url{https://www.kaggle.com/datasets/muonneutrino/us-census-demographic-data}
+        \item Dữ liệu GDP tại từng hạt (từ năm 2001 đến năm 2018): \url{https://www.kaggle.com/datasets/anasmahmood000/highest-gdp-counties-in-usa}
+    \end{itemize}
+\end{frame}
+
+
 \begin{frame}{Dữ liệu bầu cử tại từng hạt}
 	\begin{figure}[h!]
         \centering
@@ -169,7 +178,23 @@
     \end{figure}
 \end{frame}
 
+\begin{frame}{Công cụ sử dụng}
+    \begin{itemize}
+        \item Trực quan hóa: Tableau trực quan hóa dữ liệu địa lý
+        \item Phân tích độ quan trọng các đặc trưng: Mô hình hồi quy tuyến tính, XGBoost, Logistic Regression, Decision Tree, Random Forest,...
+    \end{itemize}
+\end{frame}
+
 \section{Trực quan hóa dữ liệu kết quả cuộc bầu cử Tổng thống năm 2020}
+
+\begin{frame}{Số lá phiếu Đại cử tri theo từng bang}
+	\begin{figure}[h!]
+        \centering
+        \includegraphics[width=\textwidth]{figures/State_Electoral_Votes_Bar_Chart.png}
+        \caption{Tổng số phiếu Đại cử tri theo từng bang}
+    \end{figure}
+\end{frame}
+
 
 \begin{frame}{Kết quả chung cuộc}
 	\begin{figure}[h!]
@@ -203,10 +228,18 @@
     \end{figure}
 \end{frame}
 
+\begin{frame}{Kết quả từng bang và tỷ lệ phiếu phổ thông từng ứng cử viên đạt được}
+	\begin{figure}[h!]
+        \centering
+        \includegraphics[width=\textwidth]{figures/State_Win_Candidate_and_Pie_chart.png}
+        \caption{Kết quả từng bang và tỷ lệ phiếu phổ thông từng ứng cử viên đạt được}
+    \end{figure}
+\end{frame}
+
 \begin{frame}{Tỷ lệ phiếu phổ thông của từng ứng viên}
 	\begin{figure}[h!]
         \centering
-        \includegraphics[width=0.5\textwidth]{Percentage_Total_Candidates_Bubble_Chart.png}
+        \includegraphics[width=0.6\textwidth]{Percentage_Total_Candidates_Tree_Chart.png}
         \caption{Tỷ lệ phiếu phổ thông được bầu của từng ứng cử viên}
     \end{figure}
 \end{frame}
@@ -224,6 +257,14 @@
         \centering
         \includegraphics[width=\textwidth]{Percentage_Popular_Votes_Candidates_by_States.png}
         \caption{Tỷ lệ số phiếu phổ thông của từng ứng viên tại từng bang}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Tỷ lệ số phiếu phổ thông của từng ứng viên tại từng bang}
+	\begin{figure}[h!]
+        \centering
+        \includegraphics[width=\textwidth]{figures/12_Electoral_Vote_State_Candidate_Win.png}
+        \caption{Tỷ lệ số phiếu phổ thông của từng ứng viên tại từng 12 bang có số phiếu Đại cử tri lớn nhất}
     \end{figure}
 \end{frame}
 
@@ -332,7 +373,7 @@
 \begin{frame}{Biểu đồ cột thể hiện chênh lệch tỷ lệ phiếu bầu giữa các ứng viên trên từng tiểu bang}
 	\begin{figure}[h!]
 		\centering
-		\includegraphics[height=0.7\textheight]{figures/State_Difference_Percentage_Total_Vote_Two_Candidate_Bar_Chart.png}
+		\includegraphics[width=0.9\textwidth]{figures/State_Difference_Percentage_Total_Vote_Two_Candidate_Bar_Chart.png}
 		\caption{Biểu đồ cột thể hiện chênh lệch tỷ lệ phiếu bầu giữa các ứng viên trên từng tiểu bang}
 	\end{figure}
 \end{frame}
