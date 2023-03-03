@@ -187,6 +187,38 @@
 
 \section{Trực quan hóa dữ liệu kết quả cuộc bầu cử Tổng thống năm 2020}
 
+\begin{frame}{Ứng cử viên Đảng Dân chủ}
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[height=0.8\textheight]{figures/Dem_Candidates.png}
+        \caption{Hai ứng cử viên Đảng Dân chủ}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Ứng cử viên Đảng Cộng hòa}
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[height=0.8\textheight]{figures/Rep_Candidates.png}
+        \caption{Hai ứng cử viên Đảng Cộng hòa}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Ứng cử viên Đảng Tự do}
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[height=0.8\textheight]{figures/Lib_Candidates.png}
+        \caption{Hai ứng cử viên Đảng Tự do}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Ứng cử viên Đảng Xanh}
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[height=0.8\textheight]{figures/Green_Candidates.png}
+        \caption{Hai ứng cử viên Đảng Xanh}
+    \end{figure}
+\end{frame}
+
 \begin{frame}{Số lá phiếu Đại cử tri theo từng bang}
 	\begin{figure}[h!]
         \centering
@@ -228,6 +260,14 @@
     \end{figure}
 \end{frame}
 
+\begin{frame}{Bản đồ thể hiện tỷ lệ số lá phiếu phổ thông tại mỗi bang trên toàn liên bang}
+	\begin{figure}[h!]
+        \centering
+        \includegraphics[width=\textwidth]{State_Percentage_Vote_Circle.png}
+        \caption{Bản đồ thể hiện tỷ lệ số lá phiếu phổ thông tại mỗi bang trên toàn liên bang}
+    \end{figure}
+\end{frame}
+
 \begin{frame}{Kết quả từng bang và tỷ lệ phiếu phổ thông từng ứng cử viên đạt được}
 	\begin{figure}[h!]
         \centering
@@ -265,14 +305,6 @@
         \centering
         \includegraphics[width=\textwidth]{figures/12_Electoral_Vote_State_Candidate_Win.png}
         \caption{Tỷ lệ số phiếu phổ thông của từng ứng viên tại từng 12 bang có số phiếu Đại cử tri lớn nhất}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Bản đồ thể hiện tỷ lệ số lá phiếu phổ thông tại mỗi bang trên toàn liên bang}
-	\begin{figure}[h!]
-        \centering
-        \includegraphics[width=\textwidth]{State_Percentage_Vote_Circle.png}
-        \caption{Bản đồ thể hiện tỷ lệ số lá phiếu phổ thông tại mỗi bang trên toàn liên bang}
     \end{figure}
 \end{frame}
 
@@ -501,7 +533,7 @@
 \begin{frame}{Tỷ lệ ủng hộ ứng cử viên theo số lần đi bỏ phiếu}
 	\begin{figure}[h!]
         \centering
-        \includegraphics[width=0.55\textwidth]{figures/First_time_voter.png}
+        \includegraphics[height=0.65\textheight]{figures/First_time_voter.png}
         \caption{Tỷ lệ ủng hộ ứng cử viên theo số lần đi bỏ phiếu}
     \end{figure}
 \end{frame}
@@ -534,7 +566,7 @@
 \begin{frame}{Tỷ lệ ủng hộ ứng cử viên theo phục vụ quân ngũ}
 	\begin{figure}[h!]
         \centering
-        \includegraphics[width=0.6\textwidth]{figures/Military_service.png}
+        \includegraphics[height=0.7\textheight]{figures/Military_service.png}
         \caption{Tỷ lệ ủng hộ ứng cử viên theo phục vụ quân ngũ}
     \end{figure}
 \end{frame}
@@ -558,7 +590,7 @@
 \begin{frame}{Tỷ lệ ủng hộ ứng cử viên theo quan điểm về nạo phá thai}
 	\begin{figure}[h!]
         \centering
-        \includegraphics[width=0.6\textwidth]{figures/abortion_should_be.png}
+        \includegraphics[height=0.7\textheight]{figures/abortion_should_be.png}
         \caption{Tỷ lệ ủng hộ ứng cử viên theo quan điểm về nạo phá thai}
     \end{figure}
 \end{frame}
@@ -590,12 +622,20 @@
     \end{itemize}
 \end{frame}
 
+\begin{frame}
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[height=0.85\textheight]{figures/Box_plot.png}
+        \caption{Biểu diễn box plot của các đặc trưng}
+    \end{figure}
+\end{frame}
+
 \subsection{Mô hình hồi quy}
 
 \begin{frame}{Kết quả mô hình hồi quy tuyến tính}
 	\begin{figure}[h!]
         \centering
-        \includegraphics[width=0.6\textwidth]{figures/GLM_Result.png}
+        \includegraphics[height=0.75\textheight]{figures/GLM_Result.png}
         \caption{Kết quả của mô hình hồi quy tuyến tính}
     \end{figure}
 \end{frame}
@@ -603,7 +643,7 @@
 \begin{frame}{Độ quan trọng của các đặc trưng trong mô hình XGBoost Regression}
 	\begin{figure}[h!]
         \centering
-        \includegraphics[width=0.7\textwidth]{figures/XGBoost_Regression_Feature_Importance.png}
+        \includegraphics[height=0.65\textheight]{figures/XGBoost_Regression_Feature_Importance.png}
         \caption{Độ quan trọng của các đặc trưng trong mô hình XGBoost Regression}
     \end{figure}
 \end{frame}
@@ -620,7 +660,7 @@
 \begin{frame}{Kết quả độ đo RMSE của các phương pháp}
 	\begin{figure}[h!]
         \centering
-        \includegraphics[width=0.6\textwidth]{figures/Regression_Model_Result_RMSE.png}
+        \includegraphics[height=0.6\textheight]{figures/Regression_Model_Result_RMSE.png}
         \caption{Kết quả độ đo RMSE của các phương pháp}
     \end{figure}
 	Ta nhận thấy XGBoost có kết quả tốt hơn nhiều so với mô hình hồi quy tuyến tính.
@@ -657,7 +697,7 @@
 \begin{frame}{Độ quan trọng của các đặc trưng trong mô hình Random Forest}
 	\begin{figure}[h!]
         \centering
-        \includegraphics[width=0.7\textwidth]{figures/Random_Forest_Feature_Importance.png}
+        \includegraphics[height=0.7\textheight]{figures/Random_Forest_Feature_Importance.png}
         \caption{Độ quan trọng của các đặc trưng trong mô hình Random Forest}
     \end{figure}
 \end{frame}
@@ -673,7 +713,7 @@
 \begin{frame}{Độ quan trọng của các đặc trưng trong mô hình Decision Tree}
 	\begin{figure}[h!]
         \centering
-        \includegraphics[width=0.7\textwidth]{figures/Decision_Tree_Feature_Importance.png}
+        \includegraphics[height=0.7\textheight]{figures/Decision_Tree_Feature_Importance.png}
         \caption{Độ quan trọng của các đặc trưng trong mô hình Decision Tree}
     \end{figure}
 \end{frame}
@@ -689,7 +729,7 @@
 \begin{frame}{Độ quan trọng của các đặc trưng trong mô hình XGBoost Classification}
 	\begin{figure}[h!]
         \centering
-        \includegraphics[width=0.7\textwidth]{figures/XGBoost_Regression_Feature_Importance.png}
+        \includegraphics[height=0.7\textheight]{figures/XGBoost_Regression_Feature_Importance.png}
         \caption{Độ quan trọng của các đặc trưng trong mô hình XGBoost Classification}
     \end{figure}
 \end{frame}
